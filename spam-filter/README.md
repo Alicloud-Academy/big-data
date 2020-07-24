@@ -56,10 +56,16 @@ unzip email_example.zip
 
 It may take a while to run as there are several thousand emails included in the `hamnspam` directory.
 
-Before we actually load our `.ipynb` file, we need to install some third party Python packages which are not included in the DSW environment out-of-the-box. Specifically, we need scikit-learn BeautifulSoup (an HTML parser), and lxml (needed by BeautifulSoup). We install these from the PAI DSW terminal window with:
+**Optional:** There's a spurious extra file in the email dataset for spam mail, which contains a list of filenames rather than an example spam message. Leaving it in won't have much effect on the final model, but you can remove it with:
 
 ```
-pip install bs4 lxml sklearn
+rm email_example/hamnspam/spam/0000.7b1b73cf36cf9dbc3d64e3f2ee2b91f1
+```
+
+Finally, before we actually load our `.ipynb` file, we need to install some third party Python packages which are not included in the DSW environment out-of-the-box. Specifically, we need scikit-learn BeautifulSoup (an HTML parser), and lxml (needed by BeautifulSoup). We install these from the PAI DSW terminal window with:
+
+```
+pip install --user bs4 lxml sklearn
 ```
 
 ### Training and testing our model
