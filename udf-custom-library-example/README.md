@@ -139,7 +139,27 @@ We're almost ready to use the UDF, before we do that, you need to **submit** the
 
 ### Try out our new UDF function
 
-Coming soon.
+Now that our UDF function is registered, we can create a new ODPS SQL node that uses this function:
+
+![Create an ODPS SQL node](images/23.png)
+
+Once the Ad-Hoc query is set up, copy-paste this code into the query window:
+
+```sql
+set odps.sql.python.version=cp37;
+INSERT OVERWRITE TABLE circle_data_out 
+SELECT id, radius, area(radius) FROM circle_data;
+```
+
+Note that the line `set odps.sql.python.version=cp37;` is **critical**, because MaxCompute runs Python UDFs using Python 2 by default. This line forces MaxCompute to run Python UDFs using the Python 3 runtime.
+
+Once you've saved your code, click on Run to execute the code:
+
+![Paste in code, then run](images/24.png)
+
+If everything went well, after 10-15 seconds you should see a message like this in the MaxCompute logs:
+
+![Paste in code, then run](images/25.png)
 
 ### Cleaning Up
 
