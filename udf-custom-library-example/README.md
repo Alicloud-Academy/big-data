@@ -13,19 +13,19 @@ This is a quick how-to (and demo Python code) showing how you can implement a Py
 
 First, you'll need to open up the [Alibaba Cloud Console](https://www.alibabacloud.com) by clicking on "Log In" on the upper right hand side of the Alibaba Cloud homepage. Then, you'll need to locate the DataWorks console and create a new Workspace:
 
-[!Open the product menu](images/01.png)
+![Open the product menu](images/01.png)
 
-[!Search for DataWorks](images/02.png)
+![Search for DataWorks](images/02.png)
 
-[!Choose region](images/03.png)
+![Choose region](images/03.png)
 
-[!Create workspace](images/04.png)
+![Create workspace](images/04.png)
 
-[!Choose the compute engine](images/05.png)
+![Choose the compute engine](images/05.png)
 
-[!Give the MaxCompute project a name](images/06.png)
+![Give the MaxCompute project a name](images/06.png)
 
-[!Open DataWorks Data Studio](images/07.png)
+![Open DataWorks Data Studio](images/07.png)
 
 ### Set up some test tables
 
@@ -33,9 +33,9 @@ Create two tables, one to hold the radii of circles (input data), and another to
 
 First, set up a new Ad-hoc Query:
 
-[!Open DataWorks Data Studio](images/08.png)
+![Open DataWorks Data Studio](images/08.png)
 
-[!Open DataWorks Data Studio](images/09.png)
+![Open DataWorks Data Studio](images/09.png)
 
 Once the Ad-hoc Query window opens, paste in the following MaxCompute SQL code, then hit the "Run" button near the top of the Ad-hoc Query Window:
 
