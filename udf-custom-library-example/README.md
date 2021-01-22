@@ -33,7 +33,7 @@ Create two tables, one to hold the radii of circles (input data), and another to
 
 First, set up a new Ad-hoc Query:
 
-![Open DataWorks Data Studio](images/08.png)
+![Set up new Ad-hoc Query](images/08.png)
 
 ![Open DataWorks Data Studio](images/09.png)
 
@@ -55,9 +55,9 @@ CREATE TABLE IF NOT EXISTS circle_data_out (
 
 Next, create an additional Ad-hoc Query window, which we'll use to insert some test data into the `circle_data` table:
 
-[!Open DataWorks Data Studio](images/10.png)
+![Create additional Ad-hoc Query](images/10.png)
 
-[!Open DataWorks Data Studio](images/11.png)
+![Run query](images/11.png)
 
 The SQL code you should paste in is here:
 
@@ -69,7 +69,27 @@ INSERT INTO TABLE circle_data (id, radius) VALUES (3, 2.5);
 INSERT INTO TABLE circle_data (id, radius) VALUES (4, 0.9);
 ```
 
-Later, we'll post in some Python code. 
+### Create a new Workflow
+
+We need to create a new DataWorks Workflow where we can upload our Python code and associated 3rd party libary code (NumPy). We can do this from the "Manually Triggered Workflows" area in the Data Studio console:
+
+![Create new Workflow](images/12.png)
+
+![Name new Workflow](images/13.png)
+
+### Upload resources
+
+Next, we need to upload our Python code. Right click on "Resources", then choose "Create -> Python":
+
+![Create Python resource](images/14.png)
+
+![Create Python resource](images/15.png)
+
+A new dialog should open:
+
+![New Python window](images/16.png)
+
+Paste the following code into the dialog:
 
 ```python
 from odps.udf import annotate
@@ -86,10 +106,6 @@ class area(object):
        # Calculate area of the circle
        return np.pi * (arg0 * arg0)
 ```
-
-### Upload resources
-
-Coming soon.
 
 ### Create and register a new UDF
 
