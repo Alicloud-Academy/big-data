@@ -123,7 +123,7 @@ Note that after you upload the NumPy .zip file but *before* you click "Create", 
 
 ### Create and register a new UDF
 
-Now we have our Python code and our NumPy library .zip file. It's time to register a UDF function! Right click on "Function" as shown in the image below, then click on "Create Solution"
+Now we have our Python code and our NumPy library `.zip` file. It's time to register a UDF function! Right click on "Function" as shown in the image below, then click on "Create Solution"
 
 ![Create function](images/20.png)
 
