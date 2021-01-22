@@ -161,6 +161,37 @@ If everything went well, after 10-15 seconds you should see a message like this 
 
 ![Paste in code, then run](images/25.png)
 
+### Check our results
+
+Switch back to the Ad-hoc Query view and create a new query called `check_results`:
+
+![Create new query](images/26.png)
+
+![Name new query](images/27.png)
+
+Paste the following code into the query window:
+
+```sql
+SELECT * FROM circle_data;
+SELECT * FROM circle_data_out;
+```
+
+![Run new query](images/28.png)
+
+After clicking "Run", you'll be presented with a dialog which will indicate whether there are any errors in your SQL code, alongside a cost estimate:
+
+![Confirm run](images/29.png)
+
+If there are no errors, click "Run" to continue.
+
+After the two `SELECT` statements execute, you should see the following output:
+
+![Input table](images/30.png)
+
+![Input table](images/31.png)
+
+That's it! You've successfully created a Python 3 UDF that uses a 3rd party library, and have used it within your MaxCompute project!
+
 ### Cleaning Up
 
 When you're done, just delete the DataWorks Workspace and that's it! All the related resources (MaxCompute project, tables, functions) will be automatically released.
