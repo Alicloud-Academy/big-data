@@ -135,7 +135,7 @@ After you've given the function a name, you need to tell MaxCompute which resour
 
 ![Set function configuration](images/22.png)
 
-We're almost ready to use the UDF, before we do that, you need to **submit** the function, the area.py file, and the NumPy `.zip` archive. Click on the tab corresponding to each of those resources in the DataStudio console, and click on the little up arrow (next to the save button). **This is a critically important step, all 3 of these resources must be submitted before you will be able to use your UDF function successfully**.
+We're almost ready to use the UDF, but before we do that you need to **submit** the function, the area.py file, and the NumPy `.zip` archive. Click on the tab corresponding to each of those resources in the DataStudio console, and click on the little up arrow (next to the save button). **This is a critically important step, all 3 of these resources must be submitted before you will be able to use your UDF function successfully**.
 
 ### Try out our new UDF function
 
