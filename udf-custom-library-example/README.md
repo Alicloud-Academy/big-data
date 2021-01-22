@@ -57,9 +57,7 @@ Next, create an additional Ad-hoc Query window, which we'll use to insert some t
 
 ![Create additional Ad-hoc Query](images/10.png)
 
-![Run query](images/11.png)
-
-The SQL code you should paste in is here:
+The SQL code you should paste into the query window is:
 
 ```sql
 INSERT INTO TABLE circle_data (id, radius) VALUES (0, 1.5);
@@ -68,6 +66,8 @@ INSERT INTO TABLE circle_data (id, radius) VALUES (2, 3.0);
 INSERT INTO TABLE circle_data (id, radius) VALUES (3, 2.5);
 INSERT INTO TABLE circle_data (id, radius) VALUES (4, 0.9);
 ```
+
+![Run query](images/11.png)
 
 ### Create a new Workflow
 
