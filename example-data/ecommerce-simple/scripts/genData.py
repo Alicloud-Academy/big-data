@@ -24,7 +24,7 @@ f.close()
 
 # Open CSV file to store user data
 f = open('users.csv','w')
-f.write('user_id,name,age,sex,location,country_code\n') # Header row for CSV file
+f.write('user_id,name,age,sex,country,country_code\n') # Header row for CSV file
 
 for i in range(0,userNum):
 

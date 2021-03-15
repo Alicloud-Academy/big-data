@@ -1,4 +1,4 @@
-user_id,name,age,sex,location,country_code
+user_id,name,age,sex,country,country_code
 0,Karen Bristol,25,F,Turkey,TR
 1,Charles Ross,28,M,Kenya,KE
 2,Wesley Spielman,24,M,Ukraine,UA
