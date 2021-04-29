@@ -42,7 +42,7 @@ To use PAI to train our Naive Bayes model, we need to upload our code, as well a
 
 By default, PAI notebook instances come with 5 GB of storage space. You can store Jupyter notebook files and test and training data there, and you have access to this space via a Linux command line that is built into the DSW web console. 
 
-We'll be using this built-in storage space to upload our code and data. The *upload data* section of [this document](https://www.alibabacloud.com/help/doc-detail/155155.htm) explains how. Essentially you just click the "Upload" button on the left side of the DSW web interface, and select the `email_example.zip` file. A file upload dialog will open up and once it gets to 100% you can close the dialog, that's it! 
+We'll be using this built-in storage space to upload our code and data. The *Upload Fata* section of [this document](https://www.alibabacloud.com/help/doc-detail/154119.htm) explains how. Essentially you just click the "Upload" button on the left side of the DSW web interface, and select the `email_example.zip` file. A file upload dialog will open up and once it gets to 100% you can close the dialog, that's it! 
 
 ### Unpack the data, install extra dependencies
 
