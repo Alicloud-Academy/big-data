@@ -62,7 +62,7 @@ It may take a while to run as there are several thousand emails included in the 
 rm email_example/hamnspam/spam/0000.7b1b73cf36cf9dbc3d64e3f2ee2b91f1
 ```
 
-Finally, before we actually load our `.ipynb` file, we need to install some third party Python packages which are not included in the DSW environment out-of-the-box. Specifically, we need scikit-learn BeautifulSoup (an HTML parser), and lxml (needed by BeautifulSoup). We install these from the PAI DSW terminal window with:
+Finally, before we actually load our `.ipynb` file, we need to install some third party Python packages which are not included in the DSW environment out-of-the-box. Specifically, we need `scikit-learn`, `BeautifulSoup` (an HTML parser), and `lxml` (needed by BeautifulSoup). We install these from the PAI DSW terminal window with:
 
 ```
 pip install --user bs4 lxml sklearn
