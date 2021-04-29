@@ -3,6 +3,8 @@
 - Status: **OK**
 - Notes: Code tested and working as of 2021-04-29 (YYYY-MM-DD)
 
+**Update:** This code has been turned into an *Alibaba Cloud Blog article*! You can find it [here](https://www.alibabacloud.com/blog/596462).
+
 ## What
 
 This code demonstrates how to use Platform for AI (PAI)'s [Data Science Workshop (DSW)](https://www.alibabacloud.com/help/doc-detail/194831.htm) to build a simple Naive Bayes spam classifier.
