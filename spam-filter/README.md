@@ -78,7 +78,7 @@ Have a look at the code and make sure you understand what it is doing. There are
 - Convert email data to plain text
 - Convert plain text into lists of word counts
 - Split this data into training and test datasets
-- Train Naive Bayes model based on word counts (probability each word appears in a spam or non-spam email)
+- Train the Naive Bayes model based on word counts (probability each word appears in a spam or non-spam email)
 - Calculate "accuracy" (precision and recall) of the model, on our test data
 - Try out the model on two "fake" emails (one obviously legitimate, one obviously spam)
 
@@ -88,13 +88,13 @@ One fun thing to try is to generate your own fake spam and non-spam emails and p
 
 ### Cleaning Up
 
-When you're done, return to the PAI console and stop your notebook. You won't be charged for stopped notebooks, but if you're completely done, you can delete the notebook entirely. This will remove the notebook environment and all our data and code. See the section *Manage a DSW instance* at the bottom of [this page](https://www.alibabacloud.com/help/doc-detail/155151.htm) for instructions on stopping and deleting instances.
+When you're done, return to the PAI console and stop your notebook. You won't be charged for stopped notebooks, but if you're completely done, you can delete the notebook entirely. This will remove the notebook environment and all our data and code. See the *Stop an instance* section of [this page](https://www.alibabacloud.com/help/doc-detail/154021.htm) for instructions on stopping instances. That document also explains how to *delete* an instance when you are completely done with the instance and all its data.
 
 ## Issues
 
-If you are using PAI-DSW outside Mainland China, I recommend choosing a region outside the Mainland for your PAI-DSW instance: I usually use **Singapore**.
+If you are using PAI-DSW outside Mainland China, I recommend choosing a region outside the Mainland for your PAI-DSW instance: I usually use **Kuala Lumpur (Malaysia)**.
 
-If you are inside China, you should choose a Chinese region such as **Shanghai**. Be aware that some regions in China (like Shanghai and Beijing) offer a newer version of PAI-DSW called 'DSW 2.0'. Feel free to try it out, but this code has not been tested under DSW 2.0 yet. 
+If you are inside China, you should choose a Chinese region such as **Shanghai**. Be aware that not all regions have deployed the same version of PAI-DSW (some regions like Shanghai use the latest version), so there may be differences in the interface. The experiment should work with any version of PAI-DSW, however (2.0 or 3.0, at the time of writing).
 
 ## Credits
 
