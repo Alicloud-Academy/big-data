@@ -1,7 +1,7 @@
 # Spam Filter - Use PAI To Build a Naive Bayes Spam Classifier
 
 - Status: **OK**
-- Notes: Code tested and working as of 2020-07-22 (YYYY-MM-DD)
+- Notes: Code tested and working as of 2021-04-29 (YYYY-MM-DD)
 
 ## What
 
@@ -19,14 +19,14 @@ It's pretty straightforward!
 
 ### Create a PAI DSW Environment
 
-You can follow [this guide](https://www.alibabacloud.com/help/doc-detail/155151.htm) to set up a new PAI DSW instance.
+You can follow [this guide](https://www.alibabacloud.com/help/doc-detail/163684.htm) to set up a new PAI DSW instance.
 
 Once your instance is running you'll see it in the instance list at the bottom of the console, and there will be a `Launch DSW` button you can click to enter the DSW web console. 
 
 A couple notes:
 
 - Choose the lowest specification **CPU** type DSW notebook instance: we won't need a GPU for this experiment
-- Users outside Mainland China should deploy their DSW notebook instance in a region outside mainland China, we recommend **Singapore**
+- Users outside Mainland China should deploy their DSW notebook instance in a region outside mainland China, we recommend **Kuala Lumpur (Malaysia)**
 - Users inside Mainland China should deploy their DW notebook instance in a region inside mainland China, we recommend **Shanghai**
 
 ### Prepare the data and code
