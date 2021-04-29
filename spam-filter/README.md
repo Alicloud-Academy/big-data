@@ -5,7 +5,7 @@
 
 ## What
 
-This code demonstrates how to use Platform for AI (PAI)'s [Data Science Workshop (DSW)](https://www.alibabacloud.com/help/doc-detail/126293.htm) to build a simple Naive Bayes spam classifier.
+This code demonstrates how to use Platform for AI (PAI)'s [Data Science Workshop (DSW)](https://www.alibabacloud.com/help/doc-detail/194831.htm) to build a simple Naive Bayes spam classifier.
 
 The idea for the spam classifier comes from [this Kaggle page](https://www.kaggle.com/veleon/ham-and-spam-dataset). The idea of using a Naive Bayes classifier in particular is an older idea: you can learn more from [this Wikipedia article](https://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering). 
 
