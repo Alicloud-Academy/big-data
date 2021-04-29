@@ -26,8 +26,8 @@ Once your instance is running you'll see it in the instance list at the bottom o
 A couple notes:
 
 - Choose the lowest specification **CPU** type DSW notebook instance: we won't need a GPU for this experiment
-- Users outside Mainland China should deploy their DSW notebook instance in a region outside mainland China, we recommend **Kuala Lumpur (Malaysia)**
-- Users inside Mainland China should deploy their DW notebook instance in a region inside mainland China, we recommend **Shanghai**
+- Users outside Mainland China should deploy their DSW notebook instance in a region outside mainland China. We recommend **Kuala Lumpur (Malaysia)**.
+- Users inside Mainland China should deploy their DW notebook instance in a region inside mainland China. We recommend **Shanghai**
 
 ### Prepare the data and code
 
