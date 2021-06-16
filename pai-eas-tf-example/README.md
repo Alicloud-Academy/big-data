@@ -60,7 +60,7 @@ Also a not on PAI-DSW instance types: **make sure you choose a GPU-equipped inst
 
 ### Prepare the environment
 
-Upload the following files to the PAI-DSW environment:
+Upload the following files from this GitHub repository to the PAI-DSW environment:
 
 - `cnn.ipynb`
 - `call_eas_api.ipynb`
@@ -137,7 +137,7 @@ ls
 
 You should see 1 file and 2 directories:
 
-- `saved_mode.pb`
+- `saved_model.pb`
 - `assets`
 - `variables`
 
@@ -292,7 +292,7 @@ Now, switch back to the `call_eas_api.ipynb` notebook window. Click the "double 
 
 If everything is working, you should see sets of images printed out, alongside their actual labels and the labels that our CNN model predicted:
 
-![Prediction Results](outputs.png)
+![Prediction Results](images/outputs.png)
 
 There will likely be a few images which were not correctly classified, but again that's to be expected for a relatively simple model like this one. Even so, when I ran this, the model achieved an accuracy over 70%.
 
