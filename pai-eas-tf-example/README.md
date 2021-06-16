@@ -56,7 +56,7 @@ When creating the PAI-DSW instance, make sure to choose the latest version of Te
 
 Also a not on PAI-DSW instance types: **make sure you choose a GPU-equipped instance**. This will greatly accelerate the CNN training phase. And again, we want TensorFlow 2.3, as shown here: 
 
-![TF Version](images/tf_version)
+![TF Version](images/tf_version.png)
 
 ### Prepare the environment
 
