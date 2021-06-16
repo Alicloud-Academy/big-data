@@ -3,6 +3,8 @@
 - Status: **OK**
 - Notes: Code tested and working as of 2021-06-16 (YYYY-MM-DD)
 
+**License Note**: Some of the code here (namely `cnn.ipynb` is borrowed from [tensorflow.org](https://tensorflow.org) and therefore that code (and any changes we have made to it) remains under an Apache license (see the license notes at the top of `cnn.ipynb` for details.
+
 Use the code here to test and train a Convolutional Neural Network (CNN) to recognize the images in the [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) image classification dataset. The code is based on the official [CNN tutorial](https://www.tensorflow.org/tutorials/images/cnn) from the TensorFlow.org website.
 
 ## Code contained in this repository:
