@@ -1,0 +1,11 @@
+{
+  "name": "simple_img_rec_test",
+  "generate_token": "true",
+  "model_path": "oss://path_to_model.zip",
+  "oss_endpoint": "path_to_oss_endpoint",
+  "processor": "tensorflow_cpu_2.3",
+  "metadata": {
+    "instance": 1,
+    "cpu": 1
+  }
+}
