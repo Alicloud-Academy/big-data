@@ -54,7 +54,7 @@ The code here was tested in the Shanghai region, but should work in any of the r
 
 When creating the PAI-DSW instance, make sure to choose the latest version of TensorFlow (2.3, as I write this), and be aware that **any files you save to the DSW environment will be *deleted* when the environment is stopped**. If you want changes to persist when stopping and starting the environment, please attach Alibaba Cloud NAS storage to your PAI-DSW instance. **you can only attach NAS storage when first creating a DSW instance**, so you need to decide up-front whether or not you want to enable that feature. For the purposes of this simple example, you do not need to enable NAS. 
 
-Also a not on PAI-DSW instance types: **make sure you choose a GPU-equipped instance**. This will greatly accelerate the CNN training phase. And again, we want TensorFlow 2.3, as shown here: 
+Also a note on PAI-DSW instance types: **make sure you choose a GPU-equipped instance**. This will greatly accelerate the CNN training phase. And again, we want TensorFlow 2.3, as shown here: 
 
 ![TF Version](images/tf_version.png)
 
@@ -150,6 +150,20 @@ zip saved_model.zip -r *
 ```
 
 Next, we need to use [eascmd64](https://www.alibabacloud.com/help/doc-detail/111031.htm) to upload the `.zip` file to OSS:
+
+Note that **before** you upload your model, you'll need to give eascmd64 permissions to access your account. This means you need to:
+
+1. [Create a RAM account](https://www.alibabacloud.com/help/doc-detail/93720.htm).
+2. [Grant permissions](https://www.alibabacloud.com/help/doc-detail/140135.htm) to the user (the `AliyunOSSFullAccess` RAM policy should be enough).
+3. [Create an Access Key and Secret](https://www.alibabacloud.com/help/doc-detail/116401.htm). **Don't forget to save these somewhere!**
+
+Once you've done that, save the credentials into your eascmd configuration, by running the following command inside PAI-DSW:
+
+```
+eascmd64 -i your_ak_key -k your_ak_secret config
+```
+
+Now, we can upload our model package:
 
 ```
 eascmd64 upload saved_model.zip --inner
